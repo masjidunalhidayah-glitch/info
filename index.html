@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔥 ANTI CACHE TOTAL (Chrome & Firefox) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Ramadhan 1447 H - Masjid Al Hidayah</title>
+
+  <!-- CSS anti cache -->
+  <link rel="stylesheet" href="style.css?v=<?=time()?>">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Ramadhan 1447 H</h1>
+    <h2>Masjid Al Hidayah</h2>
+
+    <div class="menu">
+      <a href="imsakiyah.php?nocache=<?=time()?>" class="card">
+        🕓
+        <span>Jadwal Puasa</span>
+      </a>
+
+      <a href="zakat.html?nocache=<?=time()?>" class="card">
+        💰
+        <span>Zakat</span>
+      </a>
+
+      <a href="tadarus.php?nocache=<?=time()?>" class="card">
+        📖
+        <span>Yuk Tadarus</span>
+      </a>
+
+      <a href="kegiatan.html?nocache=<?=time()?>" class="card">
+        🕌
+        <span>Kegiatan</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🔥 FORCE RELOAD SCRIPT -->
+  <script>
+    if (performance.navigation.type === 2) {
+      location.reload(true);
+    }
+  </script>
+
+</body>
+</html>
